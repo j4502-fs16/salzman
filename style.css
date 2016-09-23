@@ -17,25 +17,29 @@ ul {
 }
 
 p {
-  color: #114986;
-  font-family: Helvetica, Arial, sans-serif;
+  color: #435357;
+  font-family: 'Cormorant', "Times New Roman", serif;
 }
 
 h1 {
-  font-family: Georgia, "Times New Roman", serif;
-  color: #5bb6e6
+  font-family: 'Josefin Sans', Helvetica, sans-serif;
+  font-style: oblique;
+  font-size: 4em;
+  color: #256E7F
 }
 
 a:link{
-  color: #114986;
+  font-family:'Cormorant', "Times New Roman", serif;
+  font-style: italic;
+  color: #57A7BA;
 }
 
 a:visited {
-  color: red;
+  color: #C4F4FF;
 }
 
 a:hover {
-  color: blue
+  color: white
 }
 
 a img {
@@ -48,6 +52,12 @@ ul {
   padding: 0;
 }
 
+li{
+  display: inline-block;
+  padding: 8px;
+  background-color: #256E7F
+}
+
 body {
-  background-color: #b7bfc7
+  background-color: #CFE1EB
 }

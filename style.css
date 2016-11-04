@@ -4,6 +4,7 @@ h1 {
 
 p {
   text-align: center;
+  max-width: 100px;
 }
 
 img {
@@ -87,11 +88,13 @@ body {
 
       #main {
         display: flex;
+        max-width: 100px;
       }
 
         article {
             flex-grow: 2;
             order: 2;
+            max-width: 100px;
         }
 
         .aside {
@@ -100,4 +103,45 @@ body {
             width: 100%;
         }
 
-      }
+        @media screen and (min-width:1000px){
+
+          .wrapper{
+            display: flex;
+            flex-flow:row;
+          }
+
+          #nav ul{
+            display:flex;
+            flex-flow:column;
+          }
+
+          #nav li{
+            border-right:none;
+            border-bottom:1px solid rgba(255,255,255,.5);
+          }
+
+          #nav li:last-child {
+            border-bottom: none;
+          }
+
+          #content{
+            order:1;
+            margin:10px;
+          }
+
+          #sidebar{
+            order:3;
+            margin:10px;
+          }
+
+          #nav{
+            order:2;
+            margin:10px;
+            align-self: flex-start;
+          }
+
+          #footer{
+            order:4;
+          }
+
+        }
